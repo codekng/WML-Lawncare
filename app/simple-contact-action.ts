@@ -1,55 +1,52 @@
-"use server"
+"use server";
 
-import { Resend } from "resend"
-
-const resend = new Resend(process.env.RESEND_API_KEY)
+import emailjs from "@emailjs/nodejs";
 
 export async function submitContactForm(formData: FormData) {
-  const name = formData.get("name") as string
-  const email = formData.get("email") as string
-  const phone = formData.get("phone") as string
-  const service = formData.get("service") as string
-  const message = formData.get("message") as string
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  const service = formData.get("service");
+  const message = formData.get("message");
 
-  // Basic validation
-  if (!name || !email || !message) {
+  // Validation: required fields must be strings and not empty
+  if (
+    typeof name !== "string" || !name.trim() ||
+    typeof email !== "string" || !email.trim() ||
+    typeof message !== "string" || !message.trim()
+  ) {
     return {
       success: false,
       message: "Please fill in all required fields.",
-    }
+    };
   }
 
   try {
-    // Send email TO YOU (the business owner)
-    await resend.emails.send({
-      from: "Website Contact <onboarding@resend.dev>", // Use this for testing
-      to: ["your-email@gmail.com"], // ← PUT YOUR EMAIL HERE
-      subject: `New Contact: ${name} - ${service || "General Inquiry"}`,
-      text: `
-New contact form submission:
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone || "Not provided"}
-Service: ${service || "General inquiry"}
-
-Message:
-${message}
-
----
-Reply to this email or call them directly.
-      `,
-    })
+    await emailjs.send(
+      "service_2djge6b",
+      "template_tx7kuqd",
+      {
+        user_name: name.trim(),
+        user_email: email.trim(),
+        user_phone: typeof phone === "string" && phone.trim() ? phone.trim() : "Not provided",
+        user_service: typeof service === "string" && service.trim() ? service.trim() : "General Inquiry",
+        message: message.trim(),
+      },
+      {
+        publicKey: "6CNgiWyxJaQCvSW9J",
+        privateKey: process.env.EMAILJS_PRIVATE_KEY,
+      }
+    );
 
     return {
       success: true,
       message: "Thank you! We'll get back to you within 24 hours.",
-    }
-  } catch (error) {
-    console.error("Failed to send email:", error)
+    };
+  } catch (error: any) {
+    console.error("EmailJS error:", error);
     return {
       success: false,
-      message: "Sorry, there was an error. Please call us at (555) 123-4567.",
-    }
+      message: "Sorry, there was an error. Please try again later.",
+    };
   }
 }
