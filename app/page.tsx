@@ -18,16 +18,12 @@ export default function LandingPage() {
   }
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
+     {/* Header */}
       <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60 transition-all duration-300">
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl shadow-lg">
-              <img 
-                src="placeholder-logo.png" 
-                alt="WML Lawncare Logo" 
-                className="h-8 w-8 object-contain"
-              />
+            <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg">
+              <image src="placeholder-logo.png"></image>
             </div>
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
@@ -48,49 +44,6 @@ export default function LandingPage() {
               onClick={() => scrollToSection("testimonials")}
               className="text-sm font-medium hover:text-green-600 transition-colors relative group"
             >
-              Testimonials
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
-            </button>
-            <button
-              onClick={() => scrollToSection("gallery")}
-              className="text-sm font-medium hover:text-green-600 transition-colors relative group"
-            >
-              Gallery
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
-            </button>
-            <Link href="/contact" className="text-sm font-medium hover:text-green-600 transition-colors relative group">
-              Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:flex">
-              <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105">
-                Get a Quote
-              </Button>
-            </Link>
-            <Button variant="outline" size="icon" className="md:hidden rounded-full">
-              <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
 
       <main className="flex-1">
         {/* Hero Section */}
