@@ -284,9 +284,7 @@ export default function LandingPage() {
                 </div>
                 <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                   <p>
-                    With over 3 years of experience serving thecommunity, WML Lawncare has built a reputation
-                    for excellence in lawn care and landscaping services that transforms ordinary yards into
-                    extraordinary outdoor spaces.
+                   Founded by ambitious teens with a passion for lawn care, WML Lawn Care has been serving the White Meadow Lake community for over 3 years. What started as a summer job has grown into a trusted local business known for its reliability and attention to detail.
                   </p>
                   <p>
                     Our team of skilled professionals is dedicated to providing top-quality service and creating
