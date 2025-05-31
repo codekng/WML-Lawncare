@@ -24,7 +24,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-3">
             <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg">
              <Image
-                  src="/placeholder-logo.png?height=80&width=80&text=Professional+Lawn+Care+Team"
+                  src="/placeholder-logo.png?height=50&width=50&text=Professional+Lawn+Care+Team"
                   alt="WML Lawncare professional team"
                   width={80}
                   height={60}
