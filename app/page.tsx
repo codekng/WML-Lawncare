@@ -178,80 +178,145 @@ export default function LandingPage() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-          {/* Background decoration */}
-          <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-20 right-10 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-30"></div>
-            <div className="absolute bottom-20 left-10 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-20"></div>
+<section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+  {/* Background decoration */}
+  <div className="absolute top-0 left-0 w-full h-full">
+    <div className="absolute top-20 right-10 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-30"></div>
+    <div className="absolute bottom-20 left-10 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-20"></div>
+  </div>
+
+  <div className="container relative z-10">
+    <div className="text-center mb-16">
+      <div className="inline-flex items-center gap-2 bg-green-100 rounded-full px-4 py-2 text-green-700 mb-4">
+        <Scissors className="h-4 w-4" />
+        <span className="text-sm font-medium">Our Services</span>
+      </div>
+      <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+        Complete Lawn Care
+        <span className="block text-green-600">Solutions</span>
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        We offer comprehensive lawn care and landscaping services to keep your property looking its best all
+        year round with professional expertise and attention to detail.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Scissors className="h-8 w-8 text-green-600" />
           </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Lawn Mowing</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Regular mowing service with professional equipment to keep your lawn healthy and looking great all
+            season long.
+          </p>
+          <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
+            Starting at $45/visit →
+          </div>
+        </CardContent>
+      </Card>
 
-          <div className="container relative z-10">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-green-100 rounded-full px-4 py-2 text-green-700 mb-4">
-                <Scissors className="h-4 w-4" />
-                <span className="text-sm font-medium">Our Services</span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                Complete Lawn Care
-                <span className="block text-green-600">Solutions</span>
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                We offer comprehensive lawn care and landscaping services to keep your property looking its best all
-                year round with professional expertise and attention to detail.
-              </p>
-            </div>
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Shovel className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Garden Maintenance</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Comprehensive garden care including weeding, pruning, and seasonal planting for year-round beauty.
+          </p>
+          <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
+            Custom Quotes Available →
+          </div>
+        </CardContent>
+      </Card>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Scissors className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Lawn Mowing</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Regular mowing service with professional equipment to keep your lawn healthy and looking great all
-                    season long.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Starting at $45/visit →
-                  </div>
-                </CardContent>
-              </Card>
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Calendar className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Seasonal Clean-up</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Spring and fall clean-up services to prepare your lawn for the changing seasons with thorough care.
+          </p>
+          <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
+            Seasonal rates →
+          </div>
+        </CardContent>
+      </Card>
 
-          
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Shovel className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Garden Maintenance</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Comprehensive garden care including weeding, pruning, and seasonal planting for year-round beauty.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Custom Quotes Available →
-                  </div>
-                </CardContent>
-              </Card>
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <TreePine className="h-8 w-8 text-blue-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Landscaping</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Complete landscaping design and installation services to transform your outdoor space into something beautiful.
+          </p>
+          <div className="mt-4 text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
+            Call for Quote →
+          </div>
+        </CardContent>
+      </Card>
 
-             
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Calendar className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Seasonal Clean-up</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Spring and fall clean-up services to prepare your lawn for the changing seasons with thorough care.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Seasonal rates →
-                  </div>
-                </CardContent>
-              </Card>
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Leaf className="h-8 w-8 text-orange-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Leaf Removal</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Professional leaf removal and yard clean-up services to keep your property neat during fall season.
+          </p>
+          <div className="mt-4 text-orange-600 font-semibold group-hover:text-orange-700 transition-colors">
+            Call for Quote →
+          </div>
+        </CardContent>
+      </Card>
 
-       
+      <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+        <CardContent className="pt-8 pb-6">
+          <div className="mb-6 p-4 bg-gradient-to-br from-purple-100 to-violet-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Snowflake className="h-8 w-8 text-purple-600" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3 text-gray-900">Snow Removal</h3>
+          <p className="text-gray-600 leading-relaxed">
+            Reliable snow removal and ice management services to keep your property safe and accessible in winter.
+          </p>
+          <div className="mt-4 text-purple-600 font-semibold group-hover:text-purple-700 transition-colors">
+            Call for Quote →
+          </div>
+        </CardContent>
+      </Card>
+    </div>
 
+    {/* Call to Action */}
+    <div className="text-center mt-16">
+      <div className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 shadow-2xl">
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          Ready to Transform Your Lawn?
+        </h3>
+        <p className="text-green-100 mb-6 text-lg">
+          Get a free consultation and personalized quote for your property today.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button className="bg-white text-green-600 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <Phone className="mr-2 h-5 w-5" />
+            Call (973) 713-0504
+          </Button>
+          <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 rounded-full">
+            <Mail className="mr-2 h-5 w-5" />
+            Get Free Quote
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         {/* About Section */}
         <section id="about" className="py-20 relative overflow-hidden">
           {/* Background decoration */}
@@ -286,7 +351,7 @@ export default function LandingPage() {
                 </div>
                 <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                   <p>
-                    With over 15 years of experience serving the Rockaway community, WML Lawncare has built a reputation
+                    With over 3 years of experience serving the Rockaway community, WML Lawncare has built a reputation
                     for excellence in lawn care and landscaping services that transforms ordinary yards into
                     extraordinary outdoor spaces.
                   </p>
