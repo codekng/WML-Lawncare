@@ -16,7 +16,6 @@ export default function LandingPage() {
       })
     }
   }
-  
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
@@ -24,11 +23,13 @@ export default function LandingPage() {
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg">
-              <img 
-                src="placeholder-logo.png" 
-                alt="WML Lawncare Logo" 
-                className="h-6 w-6 object-contain"
-              />
+             <Image
+                  src="/placeholder-logo.png?height=80&width=80&text=Professional+Lawn+Care+Team"
+                  alt="WML Lawncare professional team"
+                  width={80}
+                  height={60}
+                  className="rounded-2xl shadow-2xl relative z-10 transform -rotate-1 hover:rotate-0 transition-transform duration-300"
+                />
             </div>
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
@@ -92,6 +93,7 @@ export default function LandingPage() {
           </div>
         </div>
       </header>
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -153,6 +155,7 @@ export default function LandingPage() {
                   <div className="text-3xl md:text-4xl font-bold text-white">3+</div>
                   <div className="text-white/80 text-sm">Years Experience</div>
                 </div>
+                
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-white">100%</div>
                   <div className="text-white/80 text-sm">Satisfaction</div>
@@ -166,16 +169,13 @@ export default function LandingPage() {
           </div>
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </section>
-      </main>
-    </div>
-  )
-}
+
         {/* Services Section */}
 <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
   {/* Background decoration */}
