@@ -388,7 +388,7 @@ export default function LandingPage() {
                     <div className="w-10 h-10 rounded-full bg-gray-200 mr-3"></div>
                     <div>
                       <p className="font-medium">Sarah Johnson</p>
-                      <p className="text-sm text-muted-foreground">Rockaway Resident</p>
+                      <p className="text-sm text-muted-foreground">White Lake Resident</p>
                     </div>
                   </div>
                 </CardContent>
@@ -562,7 +562,7 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-muted-foreground">info@wmllawncare.com</p>
+                      <p className="text-muted-foreground">wmllawncare@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -571,7 +571,7 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <h3 className="font-medium">Address</h3>
-                      <p className="text-muted-foreground">123 Main Street, Rockaway, NJ 07866</p>
+                      <p className="text-muted-foreground">White Lake and Surounding Areas</p>
                     </div>
                   </div>
                 </div>
@@ -717,7 +717,7 @@ export default function LandingPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-gray-400" />
-                  <span className="text-gray-400">info@wmllawncare.com</span>
+                  <span className="text-gray-400">wmllawncare@gmail.com</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-gray-400" />
