@@ -312,7 +312,7 @@ export default function LandingPage() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl transform rotate-3"></div>
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Professional+Lawn+Care+Team"
+                  src="/IMG_5692.JPG?height=600&width=800&text=Professional+Lawn+Care+Team"
                   alt="WML Lawncare professional team"
                   width={800}
                   height={600}
