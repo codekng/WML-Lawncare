@@ -41,13 +41,6 @@ export default function LandingPage() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm font-medium hover:text-green-600 transition-colors relative group"
-            >
-              About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
-            </button>
-            <button
               onClick={() => scrollToSection("testimonials")}
               className="text-sm font-medium hover:text-green-600 transition-colors relative group"
             >
