@@ -164,19 +164,18 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
-  )
-}
+
           {/* Scroll indicator */}
-          <div>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
             <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </section>
-
+      </main>
+    </div>
+  )
+}
         {/* Services Section */}
 <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
   {/* Background decoration */}
