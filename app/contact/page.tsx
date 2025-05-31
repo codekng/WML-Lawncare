@@ -54,7 +54,7 @@ export default function ContactPage() {
         <section className="relative py-20 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
             <Image
-              src="/placeholder.svg?height=600&width=400&text=Contact+Background"
+              src="/mower.png?height=600&width=400&text=Contact+Background"
               alt="Contact background"
               fill
               className="object-cover"
