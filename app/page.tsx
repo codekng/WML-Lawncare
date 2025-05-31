@@ -100,7 +100,7 @@ export default function LandingPage() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=1080&width=1920&text=Beautiful+Green+Lawn+with+House"
+              src="/Lawn1.jpg?height=1080&width=1920&text=Beautiful+Green+Lawn+with+House"
               alt="Beautiful maintained lawn with house"
               fill
               className="object-cover"
