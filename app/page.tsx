@@ -217,22 +217,7 @@ export default function LandingPage() {
                   </div>
                 </CardContent>
               </Card>
-
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Leaf className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Landscaping</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Custom landscape design and installation to enhance the beauty and value of your property with
-                    expert craftsmanship.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Custom quotes available →
-                  </div>
-                </CardContent>
-              </Card>
+            
 
               <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
                 <CardContent className="pt-8 pb-6">
@@ -249,15 +234,7 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Sprout className="h-8 w-8 text-green-600" />
-                  </div>
-                
-                </CardContent>
-              </Card>
-
+         
               <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
                 <CardContent className="pt-8 pb-6">
                   <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -273,15 +250,7 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
-                <CardContent className="pt-8 pb-6">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <CheckCircle2 className="h-8 w-8 text-green-600" />
-                  </div>
             
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </section>
 
