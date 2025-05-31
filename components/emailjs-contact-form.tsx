@@ -22,8 +22,8 @@ export function EmailJSContactForm() {
       emailjs.init("6CNgiWyxJaQCvSW9J")
 
       const result = await emailjs.sendForm(
-        "service_klmq1wi", // Your service ID
-        "template_contact", // Template ID - you need to create this in EmailJS dashboard
+        "service_2djge6b", // <-- Updated Service ID here
+        "template_1kpo68r", // Template ID - you need to create this in EmailJS dashboard
         formRef.current,
         "6CNgiWyxJaQCvSW9J", // Your public key
       )
@@ -108,7 +108,7 @@ export function EmailJSContactForm() {
             name="message"
             required
             className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-colors resize-none"
-            placeholder="Tell us about your project or questions"
+            placeholder="Please Type your Email Agian Here, Then tell us about your project or questions"
           ></textarea>
         </div>
 
@@ -166,19 +166,7 @@ export function EmailJSContactForm() {
         </Button>
       </form>
 
-      {/* Debug Information */}
-      <div className="mt-6 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
-        <h4 className="font-semibold mb-2">📧 EmailJS Setup Status:</h4>
-        <ul className="space-y-1">
-          <li>✅ Service ID: service_klmq1wi</li>
-          <li>✅ Public Key: 6CNgiWyxJaQCvSW9J</li>
-          <li>⚠️ Template ID: template_contact (needs to be created)</li>
-        </ul>
-        <p className="mt-2 text-xs">
-          <strong>Next Step:</strong> Create a template called "template_contact" in your EmailJS dashboard with these
-          variables: from_name, from_email, phone, service, message
-        </p>
-      </div>
+
     </div>
   )
 }

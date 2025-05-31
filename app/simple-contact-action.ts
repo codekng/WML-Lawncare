@@ -1,6 +1,7 @@
 "use server";
 
 import emailjs from "@emailjs/nodejs";
+const privateKey = process.env.EMAILJS_PRIVATE_KEY;
 
 export async function submitContactForm(formData: FormData) {
   const name = formData.get("name");

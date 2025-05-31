@@ -119,7 +119,7 @@ export default function LandingPage() {
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 bg-green-600/20 backdrop-blur-sm border border-green-400/30 rounded-full px-4 py-2 text-green-100">
                   <Leaf className="h-4 w-4" />
-                  <span className="text-sm font-medium">Professional Lawn Care Since 2008</span>
+                  <span className="text-sm font-medium">Professional Lawn Care Since 2019</span>
                 </div>
                 <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
                   Transform Your

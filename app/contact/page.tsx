@@ -81,15 +81,9 @@ export default function ContactPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: (555) 123-4567
+                  Call Now: 973) 713-0504
                 </Button>
-                <Button
-                  variant="outline"
-                  className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 rounded-full"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule Consultation
-                </Button>
+             
               </div>
             </div>
           </div>
@@ -110,7 +104,7 @@ export default function ContactPage() {
                     href="tel:5551234567"
                     className="text-green-600 font-semibold text-lg hover:text-green-700 transition-colors"
                   >
-                    (555) 123-4567
+                    973) 713-0504
                   </a>
                   <p className="text-sm text-gray-500 mt-2">Mon-Fri: 7AM-6PM</p>
                 </CardContent>
@@ -124,7 +118,7 @@ export default function ContactPage() {
                   <h3 className="text-2xl font-bold mb-3 text-gray-900">Email Us</h3>
                   <p className="text-gray-600 mb-4">Send us a message anytime</p>
                   <a
-                    href="mailto:info@wmllawncare.com"
+                    href="mailto:lawncarewml@gmail.com
                     className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                   >
                     info@wmllawncare.com
