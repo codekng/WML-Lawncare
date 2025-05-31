@@ -125,6 +125,18 @@ export default function ContactPage() {
                   <p className="text-sm text-gray-500 mt-2">We respond within 24 hours</p>
                 </CardContent>
               </Card>
+
+              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-purple-50 to-violet-50">
+                <CardContent className="pt-8 pb-6 text-center">
+                  <div className="mb-6 p-4 bg-gradient-to-br from-purple-100 to-violet-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                    <MapPin className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Visit Us</h3>
+                  <p className="text-gray-600 mb-4">Located in White Meadow Lake, NJ</p>
+                  <p className="text-purple-600 font-semibold">
+                    White Meadow Lake<br />
+                    New Jersey
+                  </p>
                   <p className="text-sm text-gray-500 mt-2">By appointment only</p>
                 </CardContent>
               </Card>
@@ -233,7 +245,26 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-              
+                <Card className="border-none shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Phone className="h-6 w-6 text-green-600" />
+                      <h3 className="text-xl font-bold text-gray-900">Emergency Service</h3>
+                    </div>
+                    <div className="space-y-2">
+                      <p className="text-gray-600 mb-3">
+                        For urgent lawn care needs or storm damage cleanup.
+                      </p>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Available</span>
+                        <span className="font-semibold text-green-600">24/7</span>
+                      </div>
+                      <p className="text-sm text-gray-500 mt-2">
+                        Additional charges may apply for emergency services.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
@@ -245,7 +276,7 @@ export default function ContactPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-gray-900">Find Us</h2>
               <p className="text-gray-600">
-                Located in Rockaway, NJ. We serve the surrounding areas within a 20-mile radius.
+                Located in White Lake, NJ. We serve the surrounding areas.
               </p>
             </div>
           </div>
