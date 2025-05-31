@@ -254,14 +254,7 @@ export default function LandingPage() {
                   <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Sprout className="h-8 w-8 text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Fertilization</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Professional fertilization treatments to promote healthy growth and vibrant color throughout the
-                    seasons.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Seasonal packages →
-                  </div>
+                
                 </CardContent>
               </Card>
 
@@ -285,14 +278,7 @@ export default function LandingPage() {
                   <div className="mb-6 p-4 bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <CheckCircle2 className="h-8 w-8 text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Lawn Treatments</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Specialized treatments for weed control, pest management, and disease prevention to maintain lawn
-                    health.
-                  </p>
-                  <div className="mt-4 text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                    Treatment plans →
-                  </div>
+            
                 </CardContent>
               </Card>
             </div>
@@ -349,9 +335,9 @@ export default function LandingPage() {
                       <CheckCircle2 className="h-6 w-6 text-green-600" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">Licensed & Insured</h3>
+                      <h3 className="font-bold text-gray-900 mb-1">Fair Prices</h3>
                       <p className="text-sm text-gray-600">
-                        Fully licensed and insured for your complete peace of mind.
+                        Know that you are getting the best deal.
                       </p>
                     </div>
                   </div>
@@ -749,11 +735,7 @@ export default function LandingPage() {
                     Garden Maintenance
                   </Link>
                 </li>
-                <li>
-                  <Link href="#" className="text-gray-400 hover:text-white">
-                    Fertilization
-                  </Link>
-                </li>
+             
                 <li>
                   <Link href="#" className="text-gray-400 hover:text-white">
                     Seasonal Clean-up
