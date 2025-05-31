@@ -119,7 +119,7 @@ export default function LandingPage() {
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 bg-green-600/20 backdrop-blur-sm border border-green-400/30 rounded-full px-4 py-2 text-green-100">
                   <Leaf className="h-4 w-4" />
-                  <span className="text-sm font-medium">Professional Lawn Care Since 2019</span>
+                  <span className="text-sm font-medium">Professional Lawn Care Since 2022</span>
                 </div>
                 <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
                   Transform Your
@@ -128,7 +128,7 @@ export default function LandingPage() {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-white/90 max-w-3xl leading-relaxed">
-                  Expert lawn maintenance, landscaping, and garden care services in Rockaway. Creating beautiful outdoor
+                  Expert lawn maintenance, landscaping, and garden care services in White Lake. Creating beautiful outdoor
                   spaces that you'll love to call home.
                 </p>
               </div>
@@ -153,13 +153,10 @@ export default function LandingPage() {
               {/* Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-white">6+</div>
+                  <div className="text-3xl md:text-4xl font-bold text-white">3+</div>
                   <div className="text-white/80 text-sm">Years Experience</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-white">500+</div>
-                  <div className="text-white/80 text-sm">Happy Clients</div>
-                </div>
+                
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-white">100%</div>
                   <div className="text-white/80 text-sm">Satisfaction</div>
