@@ -464,25 +464,17 @@ export default function LandingPage() {
         </section>
 
         {/* Gallery Section */}
-        <section id="gallery" className="py-16">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Our Work</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Browse through our gallery to see examples of our lawn care and landscaping projects.
-              </p>
-            </div>
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {[
     { src: '/IMG_6604.jpg', alt: 'Front yard before renovation - overgrown grass', title: 'Before: Overgrown Area' },
     { src: '/IMG_6610.jpg', alt: 'Landscaping work in progress with curved edging', title: 'Work in Progress' },
     { src: '/IMG_6770.jpg', alt: 'Professional lawn mowing equipment', title: 'Professional Equipment' },
-    { src: '/IMG_8751.jpg', alt: 'Completed lawn with perfect striping', title: 'Perfect Striping' },
-    { src: '/IMG_8867.jpg', alt: 'Commercial mower on residential property', title: 'Commercial Equipment' },
+    { src: '/IMG_8867.jpg', alt: 'Completed lawn with perfect striping', title: 'Perfect Striping' },
+    { src: '/IMG_8904.jpg', alt: 'Commercial mower on residential property', title: 'Commercial Equipment' },
     { src: '/IMG_8905.jpg', alt: 'Backyard transformation complete', title: 'Final Results' }
   ].map((project, index) => (
     <div key={index} className="overflow-hidden rounded-lg shadow-md">
-      <img
+      <Image
         src={project.src}
         alt={project.alt}
         width={600}
@@ -495,15 +487,6 @@ export default function LandingPage() {
     </div>
   ))}
 </div>
-              ))}
-            </div>
-            <div className="text-center mt-8">
-              <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
-                View More Projects
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-green-600 via-green-700 to-emerald-600 text-white relative overflow-hidden">
