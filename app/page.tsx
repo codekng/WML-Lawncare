@@ -463,38 +463,37 @@ export default function LandingPage() {
           </div>
         </section>
 
-       {/* Gallery Section */}
-        <section id="gallery" className="py-16">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Our Work</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Browse through our gallery to see examples of our lawn care and landscaping projects.
-              </p>
-            </div>
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  {[
-    { src: '/IMG_6604.jpg', alt: 'Front yard before renovation - overgrown grass'},
-    { src: '/IMG_6610.jpg', alt: 'Landscaping work in progress with curved edging'},
-    { src: '/IMG_6770.jpg', alt: 'Professional lawn mowing equipment'},
-    { src: '/IMG_8867.jpg', alt: 'Completed lawn with perfect striping'},
-    { src: '/IMG_8904.jpg', alt: 'Commercial mower on residential property'},
-    { src: '/IMG_8905.jpg', alt: 'Backyard transformation complete'}
-  ].map((project, index) => (
-    <div key={index} className="overflow-hidden rounded-lg shadow-md">
-      <Image
-        src={project.src}
-        alt={project.alt}
-        width={600}
-        height={400}
-        className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
-      />
-      <div className="p-3">
-        <h3 className="text-sm font-medium text-gray-900">{project.title}</h3>
-      </div>
+     {/* Gallery Section */}
+<section id="gallery" className="py-16">
+  <div className="container">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold mb-4">Our Work</h2>
+      <p className="text-muted-foreground max-w-2xl mx-auto">
+        Browse through our gallery to see examples of our lawn care and landscaping projects.
+      </p>
     </div>
-  ))}
-</div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        { src: '/IMG_6604.jpg', alt: 'Front yard before renovation - overgrown grass'},
+        { src: '/IMG_6610.jpg', alt: 'Landscaping work in progress with curved edging'},
+        { src: '/IMG_6770.jpg', alt: 'Professional lawn mowing equipment'},
+        { src: '/IMG_8867.jpg', alt: 'Completed lawn with perfect striping'},
+        { src: '/IMG_8904.jpg', alt: 'Commercial mower on residential property'},
+        { src: '/IMG_8905.jpg', alt: 'Backyard transformation complete'}
+      ].map((project, index) => (
+        <div key={index} className="overflow-hidden rounded-lg shadow-md">
+          <Image
+            src={project.src}
+            alt={project.alt}
+            width={600}
+            height={400}
+            className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-green-600 via-green-700 to-emerald-600 text-white relative overflow-hidden">
