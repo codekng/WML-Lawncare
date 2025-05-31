@@ -476,7 +476,7 @@ export default function LandingPage() {
               {[1, 2, 3, 4, 5, 6].map((item) => (
                 <div key={item} className="overflow-hidden rounded-lg shadow-md">
                   <Image
-                    src={`/placeholder.svg?height=400&width=600&text=Project+${item}`}
+                    src={`/IMG_6604.jpg?height=400&width=600&text=Project+${item}`}
                     alt={`Lawn care project ${item}`}
                     width={600}
                     height={400}
