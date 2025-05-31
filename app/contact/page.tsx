@@ -17,6 +17,7 @@ export default function ContactPage() {
             <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg">
               <Leaf className="h-6 w-6 text-white" />
             </div>
+            </div>
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 WML Lawncare
