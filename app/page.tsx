@@ -26,8 +26,8 @@ export default function LandingPage() {
              <Image
                   src="/placeholder-logo.png?height=50&width=50&text=Professional+Lawn+Care+Team"
                   alt="WML Lawncare professional team"
-                  width={80}
-                  height={60}
+                  width={50}
+                  height={50}
                   className="rounded-2xl shadow-2xl relative z-10 transform -rotate-1 hover:rotate-0 transition-transform duration-300"
                 />
             </div>
