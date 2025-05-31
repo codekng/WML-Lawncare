@@ -18,32 +18,43 @@ export default function LandingPage() {
   }
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60 transition-all duration-300">
-        <div className="container flex h-20 items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg">
-              <Leaf className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                WML Lawncare
-              </span>
-              <div className="text-xs text-gray-500 font-medium">Professional Lawn Care</div>
-            </div>
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-sm font-medium hover:text-green-600 transition-colors relative group"
-            >
-              Services
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
-            </button>
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="text-sm font-medium hover:text-green-600 transition-colors relative group"
-            >
+     {/* Header */}
+<header className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60 transition-all duration-300">
+  <div className="container flex h-20 items-center justify-between">
+    <div className="flex items-center gap-3">
+      <div className="p-2 rounded-xl shadow-lg">
+        <img 
+          src="placeholder-logo.png" 
+          alt="WML Lawncare Logo" 
+          className="h-8 w-8 object-contain"
+        />
+      </div>
+      <div>
+        <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+          WML Lawncare
+        </span>
+        <div className="text-xs text-gray-500 font-medium">Professional Lawn Care</div>
+      </div>
+    </div>
+    <nav className="hidden md:flex gap-8">
+      <button
+        onClick={() => scrollToSection("services")}
+        className="text-sm font-medium hover:text-green-600 transition-colors relative group"
+      >
+        Services
+        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
+      </button>
+      <button
+        onClick={() => scrollToSection("testimonials")}
+        className="text-sm font-medium hover:text-green-600 transition-colors relative group"
+      >
+        Testimonials
+        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
+      </button>
+      {/* Add other navigation buttons as needed */}
+    </nav>
+  </div>
+</header>
               Testimonials
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
             </button>
