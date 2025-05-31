@@ -777,7 +777,7 @@ export default function LandingPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-gray-400" />
-                  <span className="text-gray-400">123 Main Street, Rockaway, NJ 07866</span>
+                  <span className="text-gray-400">White Meadow Lake, New Jersey</span>
                 </li>
               </ul>
             </div>
