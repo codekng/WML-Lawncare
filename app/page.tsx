@@ -580,7 +580,7 @@ export default function LandingPage() {
                   variant="outline"
                   className="border-white/30 bg-transparent text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
                 >
-                  <span className="text-white">Call Now: (555) 123-4567</span>
+                  <span className="text-white">Call Now: (973) 713-0504</span>
                   <Phone className="ml-2 h-5 w-5 text-white" />
                 </Button>
               </div>
@@ -605,7 +605,7 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <h3 className="font-medium">Phone</h3>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <p className="text-muted-foreground">(973) 713-0504</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -769,7 +769,7 @@ export default function LandingPage() {
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-gray-400" />
-                  <span className="text-gray-400">(555) 123-4567</span>
+                  <span className="text-gray-400">(973) 713-0504</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-gray-400" />
