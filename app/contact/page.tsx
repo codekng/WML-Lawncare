@@ -125,19 +125,6 @@ export default function ContactPage() {
                   <p className="text-sm text-gray-500 mt-2">We respond within 24 hours</p>
                 </CardContent>
               </Card>
-
-              <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-purple-50 to-pink-50">
-                <CardContent className="pt-8 pb-6 text-center">
-                  <div className="mb-6 p-4 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                    <MapPin className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Visit Us</h3>
-                  <p className="text-gray-600 mb-4">Located in the heart of Rockaway</p>
-                  <address className="text-purple-600 font-semibold not-italic">
-                    123 Main Street
-                    <br />
-                    Rockaway, NJ 07866
-                  </address>
                   <p className="text-sm text-gray-500 mt-2">By appointment only</p>
                 </CardContent>
               </Card>
@@ -240,28 +227,13 @@ export default function ContactPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-600">Sunday</span>
-                        <span className="font-semibold">Closed</span>
+                        <span className="font-semibold">8:00 AM - 4:00 PM</span>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card className="border-none shadow-lg">
-                  <CardContent className="pt-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <Phone className="h-6 w-6 text-green-600" />
-                      <h3 className="text-xl font-bold text-gray-900">Emergency Service</h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">
-                      Need urgent lawn care assistance? We offer emergency services for storm cleanup and urgent
-                      landscaping needs.
-                    </p>
-                    <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                      <Phone className="mr-2 h-4 w-4" />
-                      Emergency: (973) 713-0504
-                    </Button>
-                  </CardContent>
-                </Card>
+              
               </div>
             </div>
           </div>
@@ -275,17 +247,6 @@ export default function ContactPage() {
               <p className="text-gray-600">
                 Located in Rockaway, NJ. We serve the surrounding areas within a 20-mile radius.
               </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="h-96 bg-gradient-to-br from-green-100 to-emerald-200 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-16 w-16 text-green-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Interactive Map</h3>
-                  <p className="text-gray-600 mb-4">123 Main Street, Rockaway, NJ 07866</p>
-                  <Button className="bg-green-600 hover:bg-green-700 text-white">Get Directions</Button>
-                </div>
-              </div>
             </div>
           </div>
         </section>
