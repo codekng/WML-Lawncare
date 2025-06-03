@@ -90,7 +90,7 @@ export function ContactForm() {
 
       <div className="space-y-2">
         <label htmlFor="message" className="text-sm font-medium">
-          Message *
+          Message * PLEASE START THE MESSAGE WITH YOUR EMAIL
         </label>
         <textarea
           id="message"
