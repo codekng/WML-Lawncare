@@ -1,21 +1,17 @@
 "use server";
 
 import emailjs from "@emailjs/nodejs";
+
 const privateKey = process.env.EMAILJS_PRIVATE_KEY;
 
 export async function submitContactForm(formData: FormData) {
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const phone = formData.get("phone");
-  const service = formData.get("service");
-  const message = formData.get("message");
+  const name = formData.get("name") as string | null;
+  const email = formData.get("email") as string | null;
+  const phone = formData.get("phone") as string | null;
+  const service = formData.get("service") as string | null;
+  const message = formData.get("message") as string | null;
 
-  // Validation: required fields must be strings and not empty
-  if (
-    typeof name !== "string" || !name.trim() ||
-    typeof email !== "string" || !email.trim() ||
-    typeof message !== "string" || !message.trim()
-  ) {
+  if (!name?.trim() || !email?.trim() || !message?.trim()) {
     return {
       success: false,
       message: "Please fill in all required fields.",
@@ -29,13 +25,13 @@ export async function submitContactForm(formData: FormData) {
       {
         user_name: name.trim(),
         user_email: email.trim(),
-        user_phone: typeof phone === "string" && phone.trim() ? phone.trim() : "Not provided",
-        user_service: typeof service === "string" && service.trim() ? service.trim() : "General Inquiry",
+        user_phone: phone?.trim() || "Not provided",
+        user_service: service?.trim() || "General Inquiry",
         message: message.trim(),
       },
       {
         publicKey: "6CNgiWyxJaQCvSW9J",
-        privateKey: process.env.EMAILJS_PRIVATE_KEY,
+        privateKey: privateKey,
       }
     );
 
@@ -51,3 +47,4 @@ export async function submitContactForm(formData: FormData) {
     };
   }
 }
+
